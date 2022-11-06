@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="Zadanie2.css"?>
+
+<xd:Zadanie2
+    xmlns:xd="http://www.xD.com/Zadanie2"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.xD.com/Zadanie2 Zadanie2.xsd"
+
+>
+<xd:author>
+    <xd:title>Author</xd:title>
+    <xd:student>
+        <xd:name>Jakub</xd:name>
+        <xd:surname>Kalinowski</xd:surname>
+        <xd:index>242413</xd:index>
+    </xd:student>
+</xd:author>
+<xd:warhammerRepo>
+    <xd:army>
+        <xd:armyData>
+            <xd:name>Ultramarines</xd:name>
+            <xd:allegiance>Loyal</xd:allegiance>
+            <xd:color></xd:color>
+            <xd:description>UwU</xd:description>
+        </xd:armyData>
+        <xd:unit>
+            <xd:unitData>
+                <xd:name>Tactical Squad Alpha</xd:name>
+                <xd:movement>6.5</xd:movement>
+                <xd:WS>4</xd:WS>
+                <xd:BS>4</xd:BS>
+                <xd:S>4</xd:S>
+                <xd:T>4</xd:T>
+                <xd:Ld>8</xd:Ld>
+                <xd:Save>3</xd:Save>
+                <xd:pointCost>100</xd:pointCost>
+                <xd:role>Troops</xd:role>
+            </xd:unitData>
+            <xd:miniature>
+                <xd:name>Alpha 1</xd:name>
+                <xd:assemblyDate>11.02.22</xd:assemblyDate>
+                <xd:paintDate>12.02.22</xd:paintDate>
+            </xd:miniature>
+            <xd:miniature>
+                <xd:name>Alpha 2</xd:name>
+                <xd:assemblyDate>11.02.22</xd:assemblyDate>
+                <xd:paintDate>12.02.22</xd:paintDate>
+            </xd:miniature>
+            <xd:miniature>
+                <xd:name>Alpha 3</xd:name>
+                <xd:assemblyDate>11.02.22</xd:assemblyDate>
+                <xd:paintDate>12.02.22</xd:paintDate>
+            </xd:miniature>
+            <xd:miniature>
+                <xd:name>Alpha 4</xd:name>
+                <xd:assemblyDate>11.02.22</xd:assemblyDate>
+                <xd:paintDate>12.02.22</xd:paintDate>
+            </xd:miniature>
+            <xd:miniature>
+                <xd:name>Alpha 5</xd:name>
+                <xd:assemblyDate>11.02.22</xd:assemblyDate>
+                <xd:paintDate>12.02.22</xd:paintDate>
+            </xd:miniature>
+            <xd:miniature>
+                <xd:name>Alpha 6</xd:name>
+                <xd:assemblyDate>11.02.22</xd:assemblyDate>
+                <xd:paintDate>12.02.22</xd:paintDate>
+            </xd:miniature>
+            <xd:miniature>
+                <xd:name>Alpha 7</xd:name>
+                <xd:assemblyDate>11.02.22</xd:assemblyDate>
+                <xd:paintDate>12.02.22</xd:paintDate>
+            </xd:miniature>
+            <xd:miniature>
+                <xd:name>Alpha 8</xd:name>
+                <xd:assemblyDate>11.02.22</xd:assemblyDate>
+                <xd:paintDate>12.02.22</xd:paintDate>
+            </xd:miniature>
+            <xd:miniature>
+                <xd:name>Alpha 9</xd:name>
+                <xd:assemblyDate>11.02.22</xd:assemblyDate>
+                <xd:paintDate>12.02.22</xd:paintDate>
+            </xd:miniature>
+            <xd:miniature>
+                <xd:name>Alpha 10</xd:name>
+                <xd:assemblyDate>11.02.22</xd:assemblyDate>
+                <xd:paintDate>12.02.22</xd:paintDate>
+            </xd:miniature>
+        </xd:unit>
+        <xd:unit>
+            <xd:unitData>
+                <xd:name>Tactical Squad Beta</xd:name>
+                <xd:movement>6.5</xd:movement>
+                <xd:WS>4</xd:WS>
+                <xd:BS>4</xd:BS>
+                <xd:S>4</xd:S>
+                <xd:T>4</xd:T>
+                <xd:Ld>8</xd:Ld>
+                <xd:Save>3</xd:Save>
+                <xd:pointCost>100</xd:pointCost>
+                <xd:role>Troops</xd:role>
+            </xd:unitData>
+            <xd:miniature>
+                <xd:name>Beta 1</xd:name>
+                <xd:assemblyDate>11.02.22</xd:assemblyDate>
+                <xd:paintDate>12.02.22</xd:paintDate>
+            </xd:miniature>
+            <xd:miniature>
+                <xd:name>Beta 2</xd:name>
+                <xd:assemblyDate>11.02.22</xd:assemblyDate>
+                <xd:paintDate>12.02.22</xd:paintDate>
+            </xd:miniature>
+            <xd:miniature>
+                <xd:name>Beta 3</xd:name>
+                <xd:assemblyDate>11.02.22</xd:assemblyDate>
+                <xd:paintDate>12.02.22</xd:paintDate>
+            </xd:miniature>
+            <xd:miniature>
+                <xd:name>Beta 4</xd:name>
+                <xd:assemblyDate>11.02.22</xd:assemblyDate>
+                <xd:paintDate>12.02.22</xd:paintDate>
+            </xd:miniature>
+            <xd:miniature>
+                <xd:name>Beta 5</xd:name>
+                <xd:assemblyDate>11.02.22</xd:assemblyDate>
+                <xd:paintDate>12.02.22</xd:paintDate>
+            </xd:miniature>
+            <xd:miniature>
+                <xd:name>Beta 6</xd:name>
+                <xd:assemblyDate>11.02.22</xd:assemblyDate>
+                <xd:paintDate>12.02.22</xd:paintDate>
+            </xd:miniature>
+            <xd:miniature>
+                <xd:name>Beta 7</xd:name>
+                <xd:assemblyDate>11.02.22</xd:assemblyDate>
+                <xd:paintDate>12.02.22</xd:paintDate>
+            </xd:miniature>
+            <xd:miniature>
+                <xd:name>Beta 8</xd:name>
+                <xd:assemblyDate>11.02.22</xd:assemblyDate>
+                <xd:paintDate>12.02.22</xd:paintDate>
+            </xd:miniature>
+            <xd:miniature>
+                <xd:name>Beta 9</xd:name>
+                <xd:assemblyDate>11.02.22</xd:assemblyDate>
+                <xd:paintDate>12.02.22</xd:paintDate>
+            </xd:miniature>
+            <xd:miniature>
+                <xd:name>Beta 10</xd:name>
+                <xd:assemblyDate>11.02.22</xd:assemblyDate>
+                <xd:paintDate>12.02.22</xd:paintDate>
+            </xd:miniature>
+        </xd:unit>
+    </xd:army>
+</xd:warhammerRepo>
+</xd:Zadanie2>

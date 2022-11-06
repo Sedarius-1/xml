@@ -1,0 +1,17 @@
+*{
+    color:black;
+}
+army{
+    display:grid;
+    width:100vw;
+}
+unit{
+    display: flex;
+    flex-direction: column;
+}
+author{
+    visibility:hidden;
+}
+author:hover{
+    visibility: visible;
+}

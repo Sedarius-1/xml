@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- Root element. Contains information about all the armies and miniatures in them -->
+<!-- Author: Jakub Kalinowski 242413 -->
+<warhammerRepo>
+	<!-- List of particular figures -->
+	<figures>
+		<!-- Single figure-->
+		<figure id="f0">
+			<!-- Identifier of a unit -->
+			<unit>u0</unit>
+			<!-- Date when a miniature was assembled -->
+			<assemblyDate>12.02.2022</assemblyDate>
+			<!-- Date when miniature was painted -->
+			<paintingDate>13.02.2022</paintingDate>
+		</figure>
+	</figures>
+	<units>
+		<!-- Single unit -->
+		<unit id ="u0">
+			<!-- Canonical name of a unit -->
+			<name>Tactical Squad</name>
+			<!-- Unit role on the battlefield -->
+			<unitType>ut0</unitType>
+			<!-- Identifier of an army -->
+			<army>a0</army>
+			<!-- Maximal distance that unit can travel in inches  -->
+			<movement>7</movement>
+			<!-- Balistic skill- how good a unit can shoot -->
+			<BS>4</BS>
+			<!-- Weapon skill - how good a unit can fight in melee  -->
+			<WS>4</WS>
+			<!-- Strength - how strong a unit is -->
+			<S>4</S>
+			<!-- Toughness - how resistant a unit is -->
+			<T>4</T>
+			<!-- Leadership - how mentally reslient unit is  -->
+			<Ld>8</Ld>
+			<!-- Armour save - how good armour of a unit is  -->
+			<armourSave>3+</armourSave>
+			<!-- How expensive unit is -->
+			<pointCost>100</pointCost>
+			<!-- Boolean to check if a unit can be a mandatory choice in an army-->
+			<compulsory/>
+		
+		</unit>
+	</units>
+	<unitTypes>
+		<!--Enum, descripting a unit role: Troop/Elite/Heavy Support/Fast Attack/Lord of War/Primarch/HQ -->
+		<unitType id="ut0">Troops</unitType>
+	</unitTypes>
+	<armies>
+		<!-- Single army -->
+		<army id="a0">
+			<!-- Name of an army  -->
+			<name>Ultramarines</name>
+			<!-- Color assigned to army to distinguish it -->
+			<color>#0047AB</color>
+			<!-- Force alignment  -->
+			<alignment>Loyalist</alignment>
+			<!-- Reference to a file descriptig an army  -->
+			<description>txt/a0.txt</description>
+		</army>
+	</armies>
+</warhammerRepo>
