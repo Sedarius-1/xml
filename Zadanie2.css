@@ -1,17 +1,106 @@
 *{
-    color:black;
+    color:white;
+    background-color: black;
 }
-army{
+author {
+     display: flex;
+     flex-direction: column;
+}
+army {
     display:grid;
-    width:100vw;
+    width:99vw;
+    border:1px solid white;
+    text-align: left;
 }
-unit{
+
+armyData{
     display: flex;
     flex-direction: column;
+    margin: 1vw;
+    border: 1px solid white;
+    width: 10vw;
+    padding: 1vw;
 }
-author{
-    visibility:hidden;
+
+armyData > name:before{
+    content:"Army: "
 }
-author:hover{
-    visibility: visible;
+
+armyData > allegiance:before{
+    content:"Allegiance: "
+}
+
+armyData >  description:before{
+    content:"Description: "
+}
+
+unit {
+    margin-left:1vw;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top:5vh;
+    margin-bottom:5vh;
+}
+unitData{
+    display:flex;
+    flex-direction: column;
+    border:1px solid white;
+    padding: 1vw;
+}
+unit > miniature {
+    display:flex;
+    flex-direction: column;
+    border: 1px solid white;
+}
+
+unit > miniature:hover {
+    background-color:blue;
+}
+
+miniature > *{
+    color: white;
+    padding: 20px;
+}
+
+miniature > *:hover{
+    color: blue;
+}
+
+movement:before {
+    content:"Movement: "
+}
+BS:before{
+ content: "BS: ";
+}
+
+WS:before{
+ content: "WS: ";
+}
+
+S:before{
+ content: "S: ";
+}
+
+T:before{
+ content: "T: ";
+}
+
+Ld:before{
+ content: "Ld: ";
+}
+
+Save:before{
+    content:"Save: "
+}
+
+Save:after{
+    content:"+"
+}
+pointCost:before{
+ content: "Point Cost: ";
+}
+
+role:before{
+    content:"Unit role: "
 }

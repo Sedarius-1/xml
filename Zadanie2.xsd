@@ -9,24 +9,24 @@
     <xsd:element name="Zadanie2" type="xd:zadanieType"/>
     <xsd:complexType name="zadanieType">
         <xsd:sequence>
-            <xsd:element name="author"></xsd:element>
+            <xsd:element name="author" type="authorType"/>
 
-            <xsd:element name="warhammerRepo"></xsd:element>
+            <xsd:element name="warhammerRepo" type="warhammerRepoType"/>
         </xsd:sequence>
     </xsd:complexType>
 
     <xsd:complexType name="authorType">
         <xsd:sequence>
-            <xsd:element name="title"></xsd:element>
-            <xsd:element name="student" type="xd:studentType" maxOccurs="1"></xsd:element>
+            <xsd:element name="title"/>
+            <xsd:element name="student" type="xd:studentType"/>
         </xsd:sequence>
     </xsd:complexType>
 
     <xsd:complexType name="studentType">
         <xsd:sequence>
-            <xsd:element name="name"></xsd:element>
-            <xsd:element name="surname"></xsd:element>
-            <xsd:element name="index" type="xd:indexType"></xsd:element>
+            <xsd:element name="name"/>
+            <xsd:element name="surname"/>
+            <xsd:element name="index" type="xd:indexType"/>
         </xsd:sequence>
     </xsd:complexType>
 
@@ -40,66 +40,67 @@
 
     <xsd:complexType name="warhammerRepoType">
         <xsd:sequence>
-            <xsd:element name="army" type="armyType" maxOccurs="unbounded"></xsd:element>
+            <xsd:element name="army" type="armyType" maxOccurs="unbounded"/>
         </xsd:sequence>
     </xsd:complexType>
 
     <xsd:complexType name="armyType">
         <xsd:sequence>
-            <xsd:element name="armyDataType"></xsd:element>
+            <xsd:element name="armyData" type="armyDataType"/>
+            <xsd:element name="unit" type="unitType" maxOccurs="unbounded"/>
         </xsd:sequence>
-        <xsd:attribute name="armyId"></xsd:attribute>
+        <xsd:attribute name="armyId"/>
     </xsd:complexType>
 
     <xsd:complexType name="armyDataType">
         <xsd:sequence>
-            <xsd:element name="name" type="xsd:string"></xsd:element>
-            <xsd:element name="allegiance" type="xsd:string"></xsd:element>
-            <xsd:element name="color" type="xsd:string"></xsd:element>
-            <xsd:element name="description" type="xsd:string"></xsd:element>
+            <xsd:element name="name" type="xsd:string"/>
+            <xsd:element name="allegiance" type="xsd:string"/>
+            <xsd:element name="description" type="xsd:string"/>
         </xsd:sequence>
     </xsd:complexType>
 
     <xsd:complexType name="miniatureType">
         <xsd:sequence>
-            <xsd:element name="name"></xsd:element>
-            <xsd:element name="assemblyDate" type="xsd:dateTime"></xsd:element>
-            <xsd:element name="paintDate" type="xsd:dateTime"></xsd:element>
+            <xsd:element name="name"/>
+            <xsd:element name="assemblyDate" type="xsd:date"/>
+            <xsd:element name="paintDate" type="xsd:date"/>
         </xsd:sequence>
     </xsd:complexType>
 
     <xsd:complexType name="unitType">
         <xsd:sequence>
-            <xsd:element name="unitDataType"></xsd:element>
+            <xsd:element name="unitData" type="unitDataType"/>
+            <xsd:element name="miniature" type="miniatureType" maxOccurs="unbounded"/>
         </xsd:sequence>
     </xsd:complexType>
 
 
     <xsd:complexType name="unitDataType">
         <xsd:sequence>
-            <xsd:element name="name"></xsd:element>
-            <xsd:element name="movement" type="xsd:float"></xsd:element>
-            <xsd:element name="WS" type="xsd:integer"></xsd:element>
-            <xsd:element name="BS" type="xsd:integer"></xsd:element>
-            <xsd:element name="S" type="xsd:integer"></xsd:element>
-            <xsd:element name="T" type="xsd:integer"></xsd:element>
-            <xsd:element name="Ld" type="xsd:integer"></xsd:element>
-            <xsd:element name="Save" type="xsd:integer"></xsd:element>
-            <xsd:element name="pointCost" type="xsd:float"></xsd:element>
-            <xsd:element name="role" type="xd:Role"></xsd:element>
+            <xsd:element name="name"/>
+            <xsd:element name="movement" type="xsd:float"/>
+            <xsd:element name="WS" type="xsd:integer"/>
+            <xsd:element name="BS" type="xsd:integer"/>
+            <xsd:element name="S" type="xsd:integer"/>
+            <xsd:element name="T" type="xsd:integer"/>
+            <xsd:element name="Ld" type="xsd:integer"/>
+            <xsd:element name="Save" type="xsd:integer"/>
+            <xsd:element name="pointCost" type="xsd:float"/>
+            <xsd:element name="role" type="xd:Role"/>
         </xsd:sequence>
         
     </xsd:complexType>
 
     <xsd:simpleType name="Role">
         <xsd:restriction base="xsd:string">
-            <xsd:enumeration value="Troops"></xsd:enumeration>
-            <xsd:enumeration value="Elites"></xsd:enumeration>
-            <xsd:enumeration value="Heavy Support"></xsd:enumeration>
-            <xsd:enumeration value="Fast Attack"></xsd:enumeration>
-            <xsd:enumeration value="Lord of War"></xsd:enumeration>
-            <xsd:enumeration value="HQ"></xsd:enumeration>
-            <xsd:enumeration value="Primarch"></xsd:enumeration>
+            <xsd:enumeration value="Troops"/>
+            <xsd:enumeration value="Elites"/>
+            <xsd:enumeration value="Heavy Support"/>
+            <xsd:enumeration value="Fast Attack"/>
+            <xsd:enumeration value="Lord of War"/>
+            <xsd:enumeration value="HQ"/>
+            <xsd:enumeration value="Primarch"/>
         </xsd:restriction>
         
     </xsd:simpleType>
