@@ -3,17 +3,16 @@
 
 
 <xd:Zadanie2
-    xmlns:xd="http://www.xD.com/Zadanie2"
+    xmlns:xd="http://www.xD.com/WarhammerRepo"
+    xmlns:xn="http://www.xD.com/Author"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://www.xD.com/Zadanie2 Zadanie2.xsd"
+    xsi:schemaLocation="http://www.xD.com/WarhammerRepo WarhammerRepo.xsd"
 >
 <xd:author>
-    <xd:title>Author</xd:title>
-    <xd:student>
-        <xd:name>Jakub</xd:name>
-        <xd:surname>Kalinowski</xd:surname>
-        <xd:index>242413</xd:index>
-    </xd:student>
+    <xn:title>Author</xn:title>
+    <xn:name>Jakub</xn:name>
+    <xn:surname>Kalinowski</xn:surname>
+    <xn:index>242413</xn:index>
 </xd:author>
 <xd:warhammerRepo>
     <xd:army>
@@ -34,6 +33,7 @@
                 <xd:Save>3</xd:Save>
                 <xd:pointCost>100</xd:pointCost>
                 <xd:role>Troops</xd:role>
+                <xd:compulsory>1</xd:compulsory>
             </xd:unitData>
             <xd:miniature>
                 <xd:name>Alpha 1</xd:name>
@@ -98,6 +98,7 @@
                 <xd:Save>3</xd:Save>
                 <xd:pointCost>100</xd:pointCost>
                 <xd:role>Troops</xd:role>
+                <xd:compulsory>1</xd:compulsory>
             </xd:unitData>
             <xd:miniature>
                 <xd:name>Beta 1</xd:name>

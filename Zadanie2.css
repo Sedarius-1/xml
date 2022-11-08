@@ -32,24 +32,24 @@ title{
     visibility:hidden;
 }
 
-student {
+/*student {
     display:flex;
     flex-direction: column;
-}
+}*/
 
-student > name:before{
+author > name:before{
     content: "Name:   "
 }
 
-student > surname:before{
+author > surname:before{
     content: "Surname:   "
 }
 
-student > index:before{
+author > index:before{
     content: "Index:   "
 }
 
-student > *:hover{
+author > *:hover{
     color:blue;
     transition: color 0.5s linear;
     -o-transition: color 0.5s linear; /* opera */
@@ -111,6 +111,14 @@ unitData{
     flex-direction: column;
     border:1px solid white;
     padding: 1vw;
+}
+
+unitData>name:first-letter{
+    font-size: 140%;
+}
+
+unitData>compulsory{
+    visibility:hidden;
 }
 
 unitData>*:hover{
