@@ -1,7 +1,3 @@
-To do:
--restrict values in stats
--expand schema
-
 Kryteria:
 -Waliduje się ✓
 -Informacje o autorze ✓
