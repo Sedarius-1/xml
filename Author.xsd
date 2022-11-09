@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xsd:schema
+        xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="http://www.xD.com/Author"
+        xmlns="http://www.xD.com/Author"
+        xmlns:xn="http://www.xD.com/Author"
+        xmlns:xd="http://www.xD.com/WarhammerRepo"
+        elementFormDefault="qualified"
+>
+
+    <xsd:import
+            namespace="http://www.xD.com/WarhammerRepo"
+            schemaLocation="WarhammerRepo.xsd"
+            xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    />
+
+    <xsd:complexType name="authorType">
+        <xsd:sequence>
+            <xsd:element name="title" type="xd:name"/>
+            <xsd:group ref="student"/>
+        </xsd:sequence>
+        <xsd:attribute name="studentId" type="xd:id"/>
+        <xsd:attribute name="year" type="xn:year"/>
+    </xsd:complexType>
+
+    <xsd:group name="student">
+        <xsd:sequence>
+            <xsd:element name="name" type="xd:name"/>
+            <xsd:element name="surname" type="xd:name"/>
+            <xsd:element name="index" type="xn:indexType"/>
+        </xsd:sequence>
+    </xsd:group>
+
+    <xsd:simpleType name="indexType">
+        <xsd:restriction base="xsd:integer">
+            <xsd:totalDigits value="6"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="year">
+        <xsd:restriction base="xsd:integer">
+            <xsd:minInclusive value="1"/>
+            <xsd:maxExclusive value="5"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+</xsd:schema>
+

@@ -5,7 +5,7 @@ Kryteria:
 -Element z wartością, z podelementami i atrybutami ✓
 -Min 6 typów prostych dla danych ✓
 -Połączenia między informacjami ✓
--Opis struktury dokumentu
+-Opis struktury dokumentu ✓
 
 -Wygląd jest atrakcyjny ✓
 -Więcej niż jeden display ✓
@@ -17,7 +17,7 @@ Kryteria:
 -schema w wiecej niż jednym pliku ✓
 -wiecej niż jedna przestrzeń nazw ✓
 -sekwencja ✓
--alternatywa
+-alternatywa ×
 -określenie liczności elementów ✓
 -min 4 różne atrybuty ✓
 -element z atrybutem i zawartością ✓

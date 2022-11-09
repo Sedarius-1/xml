@@ -23,7 +23,7 @@
         </xd:armyData>
         <xd:unit>
             <xd:unitData compulsory="true">
-                <xd:name>Tactical Squad Alpha</xd:name>
+                <xd:name>Tactical_Squad_Alpha</xd:name>
                 <xd:movement>6.5</xd:movement>
                 <xd:WS>4</xd:WS>
                 <xd:BS>4</xd:BS>
@@ -87,7 +87,7 @@
         </xd:unit>
         <xd:unit>
             <xd:unitData compulsory="false">
-                <xd:name>Tactical Squad Beta</xd:name>
+                <xd:name>Tactical_Squad_Beta</xd:name>
                 <xd:movement>6.5</xd:movement>
                 <xd:WS>4</xd:WS>
                 <xd:BS>4</xd:BS>

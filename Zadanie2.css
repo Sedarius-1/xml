@@ -1,13 +1,18 @@
+/* Animations */
 @keyframes fade {
   0%   {opacity:0}
   100% {opacity:100}
 }
 
+
+/* Custom fonts */
 @font-face {
   font-family: 'Caslon Antique';
   src: url(Caslo-an.ttf);
 }
 
+
+/* General styling */
 *{
     color:white;
     font-family: 'Caslon Antique';
@@ -18,6 +23,8 @@
     border-radius:10px;
 }
 
+
+/* Author and its children tags */
 author {
      display: flex;
      flex-direction: column;
@@ -28,14 +35,10 @@ author {
      width:97vw;
 }
 
-title{
+author>title{
     visibility:hidden;
 }
 
-/*student {
-    display:flex;
-    flex-direction: column;
-}*/
 
 author > name:before{
     content: "Name:   "
@@ -58,6 +61,8 @@ author > *:hover{
     -webkit-transition: color 0.5s linear; /*safari and chrome */
 }
 
+
+/* Army, armyData and its children elements */
 army {
     display:grid;
     width:98vw;
@@ -97,6 +102,8 @@ armyData>*:hover{
     -webkit-transition: color 0.5s linear; /*safari and chrome */
 }
 
+
+/* Unit, unitData and their children elements */
 unit {
     margin-left:1vw;
     display: flex;
@@ -122,6 +129,11 @@ unitData[compulsory="true"]{
 
 }
 
+unitData[compulsory="false"]{
+    border:1px solid blue;
+
+}
+
 unitData>*:hover{
     color:blue;
     transition: color 0.5s linear;
@@ -141,6 +153,8 @@ unit > miniature:hover {
     background-color:blue;
 }
 
+
+/* Miniature and its children elements */
 miniature > *{
     color: white;
     padding: 20px;

@@ -75,11 +75,11 @@
     </xsd:complexType>
 
     <xsd:complexType name="unitDataType">
-        <xsd:simpleContent>
+        <xsd:complexContent>
             <xsd:extension base="unitDataTypeNoAttr">
                 <xsd:attribute name="compulsory" type="xsd:boolean"/>
             </xsd:extension>
-        </xsd:simpleContent>
+        </xsd:complexContent>
     </xsd:complexType>
 
     <xsd:simpleType name="movementValue">
