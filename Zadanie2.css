@@ -117,8 +117,9 @@ unitData>name:first-letter{
     font-size: 140%;
 }
 
-unitData>compulsory{
-    visibility:hidden;
+unitData[compulsory="true"]{
+    border:1px solid gold;
+
 }
 
 unitData>*:hover{

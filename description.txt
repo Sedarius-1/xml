@@ -1,0 +1,29 @@
+main - root element
+    author - contains data about an author (id is an id of student, year is the year student is on)
+        title - title of an author element (1-25 characters)
+        name - name of author (1-25 characters)
+        surname - surname of author (1-25 characters)
+        index - index number of author (6 digits)
+
+    warhammerRepo - contains data about armies
+        army - contains data about units
+            name - name of an army (1-25 characters)
+            allegiance - which side army is on (Loyal/Traitor | Imperial/Horusian)
+            description - lenghty description of an army, not displayed in the browser, but accessible otherwise
+            (1-512 characters)
+            unit - contains data about miniatues (attribute compulsory indicates, whether unit is necessary for an army in roster creation)
+                name - name of a unit (1-25 characters)
+                movement - how far unit can move in a turn (0.0-24.0, in inches)
+                WS - how good unit fights (1-16)
+                BS - how good unit shoots (1-16)
+                S - how strong unit is (1-16)
+                T - how tough unit is (1-16)
+                Ld - how good unit's morale is (1-16)
+                save - how good unit's armour is (1-16)
+                pointCost - how much points does unit cost (1-1500)
+                role - what role unit serves on the battlefield (Troops/Elites/Heavy Support/Fast Attack/Lord of War/Primarch/HQ)
+
+                miniature - contains data about single miniature
+                    name - name of a miniature (1-25)
+                    assemblyDate - when a miniature was assembled (date)
+                    paintingDate - when a miniature was painted (date)

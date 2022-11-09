@@ -14,8 +14,8 @@
         xmlns:xsd="http://www.w3.org/2001/XMLSchema"
     />
 
-    <xsd:element name="Zadanie2" type="xd:zadanieType"/>
-    <xsd:complexType name="zadanieType">
+    <xsd:element name="Main" type="xd:mainType"/>
+    <xsd:complexType name="mainType">
         <xsd:sequence>
             <xsd:element name="author" type="xn:authorType"/>
             <xsd:element name="warhammerRepo" type="warhammerRepoType"/>
@@ -33,20 +33,20 @@
             <xsd:element name="armyData" type="armyDataType"/>
             <xsd:element name="unit" type="unitType" maxOccurs="unbounded"/>
         </xsd:sequence>
-        <xsd:attribute name="armyId" type="xsd:string"/>
+        <xsd:attribute name="armyId" type="xd:id"/>
     </xsd:complexType>
 
     <xsd:complexType name="armyDataType">
         <xsd:sequence>
-            <xsd:element name="name" type="xsd:string"/>
-            <xsd:element name="allegiance" type="xsd:string"/>
-            <xsd:element name="description" type="xsd:string"/>
+            <xsd:element name="name" type="xd:name"/>
+            <xsd:element name="allegiance" type="xd:allegiance"/>
+            <xsd:element name="description" type="xd:description"/>
         </xsd:sequence>
     </xsd:complexType>
 
     <xsd:complexType name="miniatureType">
         <xsd:sequence>
-            <xsd:element name="name" type="xsd:string"/>
+            <xsd:element name="name" type="xd:name"/>
             <xsd:element name="assemblyDate" type="xsd:date"/>
             <xsd:element name="paintDate" type="xsd:date"/>
         </xsd:sequence>
@@ -59,9 +59,9 @@
         </xsd:sequence>
     </xsd:complexType>
 
-    <xsd:complexType name="unitDataType">
+    <xsd:complexType name="unitDataTypeNoAttr">
         <xsd:sequence>
-            <xsd:element name="name" type="xsd:string"/>
+            <xsd:element name="name" type="xd:name"/>
             <xsd:element name="movement" type="xd:movementValue"/>
             <xsd:element name="WS" type="xd:statsValue"/>
             <xsd:element name="BS" type="xd:statsValue"/>
@@ -69,13 +69,18 @@
             <xsd:element name="T" type="xd:statsValue"/>
             <xsd:element name="Ld" type="xd:statsValue"/>
             <xsd:element name="Save" type="xd:saveValue"/>
-            <xsd:element name="pointCost" type="xsd:float"/>
+            <xsd:element name="pointCost" type="xd:pointValue"/>
             <xsd:element name="role" type="xd:Role"/>
-            <xsd:element name="compulsory" type="xsd:boolean"/>
         </xsd:sequence>
     </xsd:complexType>
 
-
+    <xsd:complexType name="unitDataType">
+        <xsd:simpleContent>
+            <xsd:extension base="unitDataTypeNoAttr">
+                <xsd:attribute name="compulsory" type="xsd:boolean"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
 
     <xsd:simpleType name="movementValue">
         <xsd:restriction base="xsd:float">
@@ -98,6 +103,30 @@
         </xsd:restriction>
     </xsd:simpleType>
 
+    <xsd:simpleType name="pointValue">
+        <xsd:restriction base="xsd:float">
+            <xsd:minInclusive value="1"/>
+            <xsd:maxInclusive value="1500"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="allegiance">
+        <xsd:union>
+            <xsd:simpleType>
+                <xsd:restriction base="xsd:string">
+                    <xsd:enumeration value="Loyal"/>
+                    <xsd:enumeration value="Traitor"/>
+                </xsd:restriction>
+            </xsd:simpleType>
+            <xsd:simpleType>
+                <xsd:restriction base="xsd:string">
+                    <xsd:enumeration value="Horusian"/>
+                    <xsd:enumeration value="Imperial"/>
+                </xsd:restriction>
+            </xsd:simpleType>
+        </xsd:union>
+    </xsd:simpleType>
+
     <xsd:simpleType name="Role">
         <xsd:restriction base="xsd:string">
             <xsd:enumeration value="Troops"/>
@@ -108,6 +137,26 @@
             <xsd:enumeration value="HQ"/>
             <xsd:enumeration value="Primarch"/>
         </xsd:restriction>
-        
+    </xsd:simpleType>
+
+    <xsd:simpleType name="name">
+        <xsd:restriction base="xsd:NMTOKEN">
+            <xsd:minLength value="1"/>
+            <xsd:maxLength value="25"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="id">
+        <xsd:restriction base="xsd:NMTOKEN">
+            <xsd:minLength value="1"/>
+            <xsd:maxLength value="3"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="description">
+        <xsd:restriction base="xsd:NMTOKEN">
+            <xsd:minLength value="1"/>
+            <xsd:maxLength value="512"/>
+        </xsd:restriction>
     </xsd:simpleType>
 </xsd:schema>
