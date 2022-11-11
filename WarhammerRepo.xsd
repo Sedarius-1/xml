@@ -8,6 +8,7 @@
     xmlns:xn="http://www.xD.com/Author"
     elementFormDefault="qualified"
 >
+    <!-- Import of another namespace -->
     <xsd:import
         namespace="http://www.xD.com/Author"
         schemaLocation="Author.xsd"
@@ -15,6 +16,9 @@
     />
 
     <xsd:element name="Main" type="xd:mainType"/>
+
+
+    <!-- Complex types -->
     <xsd:complexType name="mainType">
         <xsd:sequence>
             <xsd:element name="author" type="xn:authorType"/>
@@ -41,14 +45,6 @@
             <xsd:element name="name" type="xd:name"/>
             <xsd:element name="allegiance" type="xd:allegiance"/>
             <xsd:element name="description" type="xd:description"/>
-        </xsd:sequence>
-    </xsd:complexType>
-
-    <xsd:complexType name="miniatureType">
-        <xsd:sequence>
-            <xsd:element name="name" type="xd:name"/>
-            <xsd:element name="assemblyDate" type="xsd:date"/>
-            <xsd:element name="paintDate" type="xsd:date"/>
         </xsd:sequence>
     </xsd:complexType>
 
@@ -82,6 +78,16 @@
         </xsd:complexContent>
     </xsd:complexType>
 
+    <xsd:complexType name="miniatureType">
+        <xsd:sequence>
+            <xsd:element name="name" type="xd:name"/>
+            <xsd:element name="assemblyDate" type="xsd:date"/>
+            <xsd:element name="paintDate" type="xsd:date"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+
+    <!-- Simple numeric types -->
     <xsd:simpleType name="movementValue">
         <xsd:restriction base="xsd:float">
             <xsd:minInclusive value="0.0"/>
@@ -110,6 +116,31 @@
         </xsd:restriction>
     </xsd:simpleType>
 
+
+    <!-- Simple text types -->
+    <xsd:simpleType name="name">
+        <xsd:restriction base="xsd:NMTOKEN">
+            <xsd:minLength value="1"/>
+            <xsd:maxLength value="25"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="id">
+        <xsd:restriction base="xsd:NMTOKEN">
+            <xsd:minLength value="1"/>
+            <xsd:maxLength value="3"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="description">
+        <xsd:restriction base="xsd:string">
+            <xsd:minLength value="1"/>
+            <xsd:maxLength value="512"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+
+    <!-- Union -->
     <xsd:simpleType name="allegiance">
         <xsd:union>
             <xsd:simpleType>
@@ -127,6 +158,8 @@
         </xsd:union>
     </xsd:simpleType>
 
+
+    <!-- Enum -->
     <xsd:simpleType name="Role">
         <xsd:restriction base="xsd:string">
             <xsd:enumeration value="Troops"/>
@@ -136,27 +169,6 @@
             <xsd:enumeration value="Lord of War"/>
             <xsd:enumeration value="HQ"/>
             <xsd:enumeration value="Primarch"/>
-        </xsd:restriction>
-    </xsd:simpleType>
-
-    <xsd:simpleType name="name">
-        <xsd:restriction base="xsd:NMTOKEN">
-            <xsd:minLength value="1"/>
-            <xsd:maxLength value="25"/>
-        </xsd:restriction>
-    </xsd:simpleType>
-
-    <xsd:simpleType name="id">
-        <xsd:restriction base="xsd:NMTOKEN">
-            <xsd:minLength value="1"/>
-            <xsd:maxLength value="3"/>
-        </xsd:restriction>
-    </xsd:simpleType>
-
-    <xsd:simpleType name="description">
-        <xsd:restriction base="xsd:NMTOKEN">
-            <xsd:minLength value="1"/>
-            <xsd:maxLength value="512"/>
         </xsd:restriction>
     </xsd:simpleType>
 </xsd:schema>

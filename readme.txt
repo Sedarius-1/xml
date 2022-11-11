@@ -21,7 +21,7 @@ Kryteria:
 -określenie liczności elementów ✓
 -min 4 różne atrybuty ✓
 -element z atrybutem i zawartością ✓
--key i keyref
+-key i keyref ×
 -grupa elementów/atrybutów ✓
 -własne definicje dla wszystkich typów tekstowych ✓
 -zakresy typów liczbowych ✓
