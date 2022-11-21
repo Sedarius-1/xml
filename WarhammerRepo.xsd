@@ -15,13 +15,23 @@
         xmlns:xsd="http://www.w3.org/2001/XMLSchema"
     />
 
-    <xsd:element name="Main" type="xd:mainType"/>
+    <xsd:element name="Main" type="xd:mainType">
+        <xsd:key name="key_Type">
+            <xsd:selector xpath="xd:types/xd:type" />
+            <xsd:field xpath="@id"/>
+        </xsd:key>
+        <xsd:keyref name="keyref_Type_miniature" refer="key_Type">
+            <xsd:selector xpath="xd:warhammerRepo/xd:army/xd:unit/xd:unitData"/>
+            <xsd:field xpath="@id"/>
+        </xsd:keyref>
+    </xsd:element>
 
 
     <!-- Complex types -->
     <xsd:complexType name="mainType">
         <xsd:sequence>
             <xsd:element name="author" type="xn:authorType"/>
+            <xsd:element name="types" type="xd:typesType"/>
             <xsd:element name="warhammerRepo" type="warhammerRepoType"/>
         </xsd:sequence>
     </xsd:complexType>
@@ -74,6 +84,7 @@
         <xsd:complexContent>
             <xsd:extension base="unitDataTypeNoAttr">
                 <xsd:attribute name="compulsory" type="xsd:boolean"/>
+                <xsd:attribute name="idref" type="xsd:string"/>
             </xsd:extension>
         </xsd:complexContent>
     </xsd:complexType>
@@ -84,6 +95,28 @@
             <xsd:element name="assemblyDate" type="xsd:date"/>
             <xsd:element name="paintDate" type="xsd:date"/>
         </xsd:sequence>
+    </xsd:complexType>
+
+<!--    <xsd:complexType name="miniatureType">-->
+<!--        <xsd:complexContent>-->
+<!--            <xsd:extension base="miniatureTypeNoId">-->
+<!--                -->
+<!--            </xsd:extension>-->
+<!--        </xsd:complexContent>-->
+<!--    </xsd:complexType>-->
+
+    <xsd:complexType name="typesType">
+        <xsd:sequence>
+            <xsd:element name="type" type="typeType" maxOccurs="unbounded"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+
+    <xsd:complexType name="typeType">
+        <xsd:sequence>
+            <xsd:element name="name" type="xsd:string"/>
+        </xsd:sequence>
+        <xsd:attribute name="id" type="xsd:string"/>
     </xsd:complexType>
 
 
@@ -157,7 +190,6 @@
             </xsd:simpleType>
         </xsd:union>
     </xsd:simpleType>
-
 
     <!-- Enum -->
     <xsd:simpleType name="Role">
