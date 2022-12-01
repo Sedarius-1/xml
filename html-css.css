@@ -25,3 +25,11 @@ td, th{
     color:gold;
 
 }
+#headerDiv{
+    display:flex;
+    flex-direction=row;
+}
+img{
+   width:350px;
+   height:250px;
+}

@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Miniatures>
-   <Date>2022-11-21</Date>
+   <Author>
+      <Name>Jakub</Name>
+      <Surname>Kalinowski</Surname>
+      <Index>242413</Index>
+   </Author>
+   <Date>2022-12-01</Date>
    <Army>
       <Army_name>Ultramarines</Army_name>
       <Allegiance>Loyal</Allegiance>
    </Army>
-   <Unit>
+   <Unit Is_compulsory="true">
+      <Unit_type>Infantry</Unit_type>
       <Unit_name>Tactical_Squad_Alpha</Unit_name>
-      <Unit_type>Infantry</Unit_type>
-      <Is_compulsory>true</Is_compulsory>
       <Movement>6.5</Movement>
       <WS>4</WS>
       <BS>4</BS>
@@ -18,11 +22,13 @@
       <Save>3</Save>
       <Point_cost>100</Point_cost>
       <Battlefield_role>Troops</Battlefield_role>
+      <Difference_from_avg>30</Difference_from_avg>
+      <Difference_from_min>0</Difference_from_min>
+      <Difference_from_max>120</Difference_from_max>
    </Unit>
-   <Unit>
+   <Unit Is_compulsory="false">
+      <Unit_type>Infantry</Unit_type>
       <Unit_name>Tactical_Squad_Beta</Unit_name>
-      <Unit_type>Infantry</Unit_type>
-      <Is_compulsory>false</Is_compulsory>
       <Movement>6.5</Movement>
       <WS>4</WS>
       <BS>4</BS>
@@ -32,11 +38,13 @@
       <Save>3</Save>
       <Point_cost>100</Point_cost>
       <Battlefield_role>Troops</Battlefield_role>
+      <Difference_from_avg>30</Difference_from_avg>
+      <Difference_from_min>0</Difference_from_min>
+      <Difference_from_max>120</Difference_from_max>
    </Unit>
-   <Unit>
+   <Unit Is_compulsory="true">
+      <Unit_type>Infantry</Unit_type>
       <Unit_name>Tactical_Squad_Theta</Unit_name>
-      <Unit_type>Infantry</Unit_type>
-      <Is_compulsory>true</Is_compulsory>
       <Movement>6.5</Movement>
       <WS>4</WS>
       <BS>4</BS>
@@ -46,11 +54,13 @@
       <Save>3</Save>
       <Point_cost>100</Point_cost>
       <Battlefield_role>Troops</Battlefield_role>
+      <Difference_from_avg>30</Difference_from_avg>
+      <Difference_from_min>0</Difference_from_min>
+      <Difference_from_max>120</Difference_from_max>
    </Unit>
-   <Unit>
-      <Unit_name>Contemptor_Dreadnought_1</Unit_name>
+   <Unit Is_compulsory="false">
       <Unit_type>Dreadnought</Unit_type>
-      <Is_compulsory>false</Is_compulsory>
+      <Unit_name>Contemptor_Dreadnought_1</Unit_name>
       <Movement>7.0</Movement>
       <WS>5</WS>
       <BS>5</BS>
@@ -60,165 +70,170 @@
       <Save>2</Save>
       <Point_cost>220</Point_cost>
       <Battlefield_role>Elites</Battlefield_role>
+      <Difference_from_avg>90</Difference_from_avg>
+      <Difference_from_min>120</Difference_from_min>
+      <Difference_from_max>0</Difference_from_max>
    </Unit>
    <Miniature>
-      <Miniature_name>Alpha1</Miniature_name>
+      <Miniature_name>Alpha_1</Miniature_name>
       <Assembly_date>2022-03-12</Assembly_date>
       <Paint_date>2022-03-15</Paint_date>
    </Miniature>
    <Miniature>
-      <Miniature_name>Alpha2</Miniature_name>
+      <Miniature_name>Alpha_2</Miniature_name>
       <Assembly_date>2022-03-12</Assembly_date>
       <Paint_date>2022-03-15</Paint_date>
    </Miniature>
    <Miniature>
-      <Miniature_name>Alpha3</Miniature_name>
+      <Miniature_name>Alpha_3</Miniature_name>
       <Assembly_date>2022-03-12</Assembly_date>
       <Paint_date>2022-03-15</Paint_date>
    </Miniature>
    <Miniature>
-      <Miniature_name>Alpha4</Miniature_name>
+      <Miniature_name>Alpha_4</Miniature_name>
       <Assembly_date>2022-03-16</Assembly_date>
       <Paint_date>2022-03-18</Paint_date>
    </Miniature>
    <Miniature>
-      <Miniature_name>Alpha5</Miniature_name>
+      <Miniature_name>Alpha_5</Miniature_name>
       <Assembly_date>2022-03-16</Assembly_date>
       <Paint_date>2022-03-18</Paint_date>
    </Miniature>
    <Miniature>
-      <Miniature_name>Alpha6</Miniature_name>
+      <Miniature_name>Alpha_6</Miniature_name>
       <Assembly_date>2022-03-22</Assembly_date>
       <Paint_date>2022-03-22</Paint_date>
    </Miniature>
    <Miniature>
-      <Miniature_name>Alpha7</Miniature_name>
+      <Miniature_name>Alpha_7</Miniature_name>
       <Assembly_date>2022-03-24</Assembly_date>
       <Paint_date>2022-03-29</Paint_date>
    </Miniature>
    <Miniature>
-      <Miniature_name>Alpha8</Miniature_name>
+      <Miniature_name>Alpha_8</Miniature_name>
       <Assembly_date>2022-03-24</Assembly_date>
       <Paint_date>2022-03-29</Paint_date>
    </Miniature>
    <Miniature>
-      <Miniature_name>Alpha9</Miniature_name>
+      <Miniature_name>Alpha_9</Miniature_name>
       <Assembly_date>2022-03-24</Assembly_date>
       <Paint_date>2022-03-29</Paint_date>
    </Miniature>
    <Miniature>
-      <Miniature_name>Alpha10</Miniature_name>
+      <Miniature_name>Alpha_10</Miniature_name>
       <Assembly_date>2022-04-01</Assembly_date>
       <Paint_date>2022-04-01</Paint_date>
    </Miniature>
    <Miniature>
-      <Miniature_name>Beta1</Miniature_name>
+      <Miniature_name>Beta_1</Miniature_name>
       <Assembly_date>2022-04-01</Assembly_date>
       <Paint_date>2022-04-01</Paint_date>
    </Miniature>
    <Miniature>
-      <Miniature_name>Beta2</Miniature_name>
+      <Miniature_name>Beta_2</Miniature_name>
       <Assembly_date>2022-04-05</Assembly_date>
       <Paint_date>2022-04-07</Paint_date>
    </Miniature>
    <Miniature>
-      <Miniature_name>Beta3</Miniature_name>
+      <Miniature_name>Beta_3</Miniature_name>
       <Assembly_date>2022-04-05</Assembly_date>
       <Paint_date>2022-04-07</Paint_date>
    </Miniature>
    <Miniature>
-      <Miniature_name>Beta4</Miniature_name>
+      <Miniature_name>Beta_4</Miniature_name>
       <Assembly_date>2022-04-11</Assembly_date>
       <Paint_date>2022-04-12</Paint_date>
    </Miniature>
    <Miniature>
-      <Miniature_name>Beta5</Miniature_name>
+      <Miniature_name>Beta_5</Miniature_name>
       <Assembly_date>2022-04-11</Assembly_date>
       <Paint_date>2022-04-12</Paint_date>
    </Miniature>
    <Miniature>
-      <Miniature_name>Beta6</Miniature_name>
+      <Miniature_name>Beta_6</Miniature_name>
       <Assembly_date>2022-04-14</Assembly_date>
       <Paint_date>2022-04-14</Paint_date>
    </Miniature>
    <Miniature>
-      <Miniature_name>Beta7</Miniature_name>
+      <Miniature_name>Beta_7</Miniature_name>
       <Assembly_date>2022-04-14</Assembly_date>
       <Paint_date>2022-04-14</Paint_date>
    </Miniature>
    <Miniature>
-      <Miniature_name>Beta8</Miniature_name>
+      <Miniature_name>Beta_8</Miniature_name>
       <Assembly_date>2022-04-15</Assembly_date>
       <Paint_date>2022-04-15</Paint_date>
    </Miniature>
    <Miniature>
-      <Miniature_name>Beta9</Miniature_name>
+      <Miniature_name>Beta_9</Miniature_name>
       <Assembly_date>2022-04-16</Assembly_date>
       <Paint_date>2022-04-18</Paint_date>
    </Miniature>
    <Miniature>
-      <Miniature_name>Beta10</Miniature_name>
+      <Miniature_name>Beta_10</Miniature_name>
       <Assembly_date>2022-04-18</Assembly_date>
       <Paint_date>2022-04-19</Paint_date>
    </Miniature>
    <Miniature>
-      <Miniature_name>Theta1</Miniature_name>
+      <Miniature_name>Theta_1</Miniature_name>
       <Assembly_date>2022-04-19</Assembly_date>
       <Paint_date>2022-04-19</Paint_date>
    </Miniature>
    <Miniature>
-      <Miniature_name>Theta2</Miniature_name>
+      <Miniature_name>Theta_2</Miniature_name>
       <Assembly_date>2022-04-25</Assembly_date>
       <Paint_date>2022-04-27</Paint_date>
    </Miniature>
    <Miniature>
-      <Miniature_name>Theta3</Miniature_name>
+      <Miniature_name>Theta_3</Miniature_name>
       <Assembly_date>2022-04-25</Assembly_date>
       <Paint_date>2022-04-27</Paint_date>
    </Miniature>
    <Miniature>
-      <Miniature_name>Theta4</Miniature_name>
+      <Miniature_name>Theta_4</Miniature_name>
       <Assembly_date>2022-05-11</Assembly_date>
       <Paint_date>2022-05-13</Paint_date>
    </Miniature>
    <Miniature>
-      <Miniature_name>Theta5</Miniature_name>
+      <Miniature_name>Theta_5</Miniature_name>
       <Assembly_date>2022-05-14</Assembly_date>
       <Paint_date>2022-05-15</Paint_date>
    </Miniature>
    <Miniature>
-      <Miniature_name>Theta6</Miniature_name>
+      <Miniature_name>Theta_6</Miniature_name>
       <Assembly_date>2022-05-14</Assembly_date>
       <Paint_date>2022-05-15</Paint_date>
    </Miniature>
    <Miniature>
-      <Miniature_name>Theta7</Miniature_name>
+      <Miniature_name>Theta_7</Miniature_name>
       <Assembly_date>2022-05-14</Assembly_date>
       <Paint_date>2022-05-15</Paint_date>
    </Miniature>
    <Miniature>
-      <Miniature_name>Theta8</Miniature_name>
+      <Miniature_name>Theta_8</Miniature_name>
       <Assembly_date>2022-05-19</Assembly_date>
       <Paint_date>2022-05-19</Paint_date>
    </Miniature>
    <Miniature>
-      <Miniature_name>Theta9</Miniature_name>
+      <Miniature_name>Theta_9</Miniature_name>
       <Assembly_date>2022-05-19</Assembly_date>
       <Paint_date>2022-05-20</Paint_date>
    </Miniature>
    <Miniature>
-      <Miniature_name>Theta10</Miniature_name>
+      <Miniature_name>Theta_10</Miniature_name>
       <Assembly_date>2022-05-20</Assembly_date>
       <Paint_date>2022-05-21</Paint_date>
    </Miniature>
    <Miniature>
-      <Miniature_name>Dread1</Miniature_name>
+      <Miniature_name>Dread_1</Miniature_name>
       <Assembly_date>2022-06-19</Assembly_date>
       <Paint_date>2022-06-22</Paint_date>
    </Miniature>
    <stats>
       <Average_point_cost>130</Average_point_cost>
       <Minimal_point_cost>100</Minimal_point_cost>
-      <Maxmial_point_cost>220</Maxmial_point_cost>
+      <Maximal_point_cost>220</Maximal_point_cost>
+      <Miniatures_Count>31</Miniatures_Count>
+      <Unit_Count>4</Unit_Count>
    </stats>
 </Miniatures>

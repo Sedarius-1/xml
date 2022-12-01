@@ -45,52 +45,52 @@
                     <xd:role>Troops</xd:role>
                 </xd:unitData>
                 <xd:miniature>
-                    <xd:name>Alpha1</xd:name>
+                    <xd:name>Alpha_1</xd:name>
                     <xd:assemblyDate>2022-03-12</xd:assemblyDate>
                     <xd:paintDate>2022-03-15</xd:paintDate>
                 </xd:miniature>
                 <xd:miniature>
-                    <xd:name>Alpha2</xd:name>
+                    <xd:name>Alpha_2</xd:name>
                     <xd:assemblyDate>2022-03-12</xd:assemblyDate>
                     <xd:paintDate>2022-03-15</xd:paintDate>
                 </xd:miniature>
                 <xd:miniature>
-                    <xd:name>Alpha3</xd:name>
+                    <xd:name>Alpha_3</xd:name>
                     <xd:assemblyDate>2022-03-12</xd:assemblyDate>
                     <xd:paintDate>2022-03-15</xd:paintDate>
                 </xd:miniature>
                 <xd:miniature>
-                    <xd:name>Alpha4</xd:name>
+                    <xd:name>Alpha_4</xd:name>
                     <xd:assemblyDate>2022-03-16</xd:assemblyDate>
                     <xd:paintDate>2022-03-18</xd:paintDate>
                 </xd:miniature>
                 <xd:miniature>
-                    <xd:name>Alpha5</xd:name>
+                    <xd:name>Alpha_5</xd:name>
                     <xd:assemblyDate>2022-03-16</xd:assemblyDate>
                     <xd:paintDate>2022-03-18</xd:paintDate>
                 </xd:miniature>
                 <xd:miniature>
-                    <xd:name>Alpha6</xd:name>
+                    <xd:name>Alpha_6</xd:name>
                     <xd:assemblyDate>2022-03-22</xd:assemblyDate>
                     <xd:paintDate>2022-03-22</xd:paintDate>
                 </xd:miniature>
                 <xd:miniature>
-                    <xd:name>Alpha7</xd:name>
+                    <xd:name>Alpha_7</xd:name>
                     <xd:assemblyDate>2022-03-24</xd:assemblyDate>
                     <xd:paintDate>2022-03-29</xd:paintDate>
                 </xd:miniature>
                 <xd:miniature>
-                    <xd:name>Alpha8</xd:name>
+                    <xd:name>Alpha_8</xd:name>
                     <xd:assemblyDate>2022-03-24</xd:assemblyDate>
                     <xd:paintDate>2022-03-29</xd:paintDate>
                 </xd:miniature>
                 <xd:miniature>
-                    <xd:name>Alpha9</xd:name>
+                    <xd:name>Alpha_9</xd:name>
                     <xd:assemblyDate>2022-03-24</xd:assemblyDate>
                     <xd:paintDate>2022-03-29</xd:paintDate>
                 </xd:miniature>
                 <xd:miniature>
-                    <xd:name>Alpha10</xd:name>
+                    <xd:name>Alpha_10</xd:name>
                     <xd:assemblyDate>2022-04-01</xd:assemblyDate>
                     <xd:paintDate>2022-04-01</xd:paintDate>
                 </xd:miniature>
@@ -109,52 +109,52 @@
                     <xd:role>Troops</xd:role>
                 </xd:unitData>
                 <xd:miniature>
-                    <xd:name>Beta1</xd:name>
+                    <xd:name>Beta_1</xd:name>
                     <xd:assemblyDate>2022-04-01</xd:assemblyDate>
                     <xd:paintDate>2022-04-01</xd:paintDate>
                 </xd:miniature>
                 <xd:miniature>
-                    <xd:name>Beta2</xd:name>
+                    <xd:name>Beta_2</xd:name>
                     <xd:assemblyDate>2022-04-05</xd:assemblyDate>
                     <xd:paintDate>2022-04-07</xd:paintDate>
                 </xd:miniature>
                 <xd:miniature>
-                    <xd:name>Beta3</xd:name>
+                    <xd:name>Beta_3</xd:name>
                     <xd:assemblyDate>2022-04-05</xd:assemblyDate>
                     <xd:paintDate>2022-04-07</xd:paintDate>
                 </xd:miniature>
                 <xd:miniature>
-                    <xd:name>Beta4</xd:name>
+                    <xd:name>Beta_4</xd:name>
                     <xd:assemblyDate>2022-04-11</xd:assemblyDate>
                     <xd:paintDate>2022-04-12</xd:paintDate>
                 </xd:miniature>
                 <xd:miniature>
-                    <xd:name>Beta5</xd:name>
+                    <xd:name>Beta_5</xd:name>
                     <xd:assemblyDate>2022-04-11</xd:assemblyDate>
                     <xd:paintDate>2022-04-12</xd:paintDate>
                 </xd:miniature>
                 <xd:miniature>
-                    <xd:name>Beta6</xd:name>
+                    <xd:name>Beta_6</xd:name>
                     <xd:assemblyDate>2022-04-14</xd:assemblyDate>
                     <xd:paintDate>2022-04-14</xd:paintDate>
                 </xd:miniature>
                 <xd:miniature>
-                    <xd:name>Beta7</xd:name>
+                    <xd:name>Beta_7</xd:name>
                     <xd:assemblyDate>2022-04-14</xd:assemblyDate>
                     <xd:paintDate>2022-04-14</xd:paintDate>
                 </xd:miniature>
                 <xd:miniature>
-                    <xd:name>Beta8</xd:name>
+                    <xd:name>Beta_8</xd:name>
                     <xd:assemblyDate>2022-04-15</xd:assemblyDate>
                     <xd:paintDate>2022-04-15</xd:paintDate>
                 </xd:miniature>
                 <xd:miniature>
-                    <xd:name>Beta9</xd:name>
+                    <xd:name>Beta_9</xd:name>
                     <xd:assemblyDate>2022-04-16</xd:assemblyDate>
                     <xd:paintDate>2022-04-18</xd:paintDate>
                 </xd:miniature>
                 <xd:miniature>
-                    <xd:name>Beta10</xd:name>
+                    <xd:name>Beta_10</xd:name>
                     <xd:assemblyDate>2022-04-18</xd:assemblyDate>
                     <xd:paintDate>2022-04-19</xd:paintDate>
                 </xd:miniature>
@@ -173,52 +173,52 @@
                     <xd:role>Troops</xd:role>
                 </xd:unitData>
                 <xd:miniature>
-                    <xd:name>Theta1</xd:name>
+                    <xd:name>Theta_1</xd:name>
                     <xd:assemblyDate>2022-04-19</xd:assemblyDate>
                     <xd:paintDate>2022-04-19</xd:paintDate>
                 </xd:miniature>
                 <xd:miniature>
-                    <xd:name>Theta2</xd:name>
+                    <xd:name>Theta_2</xd:name>
                     <xd:assemblyDate>2022-04-25</xd:assemblyDate>
                     <xd:paintDate>2022-04-27</xd:paintDate>
                 </xd:miniature>
                 <xd:miniature>
-                    <xd:name>Theta3</xd:name>
+                    <xd:name>Theta_3</xd:name>
                     <xd:assemblyDate>2022-04-25</xd:assemblyDate>
                     <xd:paintDate>2022-04-27</xd:paintDate>
                 </xd:miniature>
                 <xd:miniature>
-                    <xd:name>Theta4</xd:name>
+                    <xd:name>Theta_4</xd:name>
                     <xd:assemblyDate>2022-05-11</xd:assemblyDate>
                     <xd:paintDate>2022-05-13</xd:paintDate>
                 </xd:miniature>
                 <xd:miniature>
-                    <xd:name>Theta5</xd:name>
+                    <xd:name>Theta_5</xd:name>
                     <xd:assemblyDate>2022-05-14</xd:assemblyDate>
                     <xd:paintDate>2022-05-15</xd:paintDate>
                 </xd:miniature>
                 <xd:miniature>
-                    <xd:name>Theta6</xd:name>
+                    <xd:name>Theta_6</xd:name>
                     <xd:assemblyDate>2022-05-14</xd:assemblyDate>
                     <xd:paintDate>2022-05-15</xd:paintDate>
                 </xd:miniature>
                 <xd:miniature>
-                    <xd:name>Theta7</xd:name>
+                    <xd:name>Theta_7</xd:name>
                     <xd:assemblyDate>2022-05-14</xd:assemblyDate>
                     <xd:paintDate>2022-05-15</xd:paintDate>
                 </xd:miniature>
                 <xd:miniature>
-                    <xd:name>Theta8</xd:name>
+                    <xd:name>Theta_8</xd:name>
                     <xd:assemblyDate>2022-05-19</xd:assemblyDate>
                     <xd:paintDate>2022-05-19</xd:paintDate>
                 </xd:miniature>
                 <xd:miniature>
-                    <xd:name>Theta9</xd:name>
+                    <xd:name>Theta_9</xd:name>
                     <xd:assemblyDate>2022-05-19</xd:assemblyDate>
                     <xd:paintDate>2022-05-20</xd:paintDate>
                 </xd:miniature>
                 <xd:miniature>
-                    <xd:name>Theta10</xd:name>
+                    <xd:name>Theta_10</xd:name>
                     <xd:assemblyDate>2022-05-20</xd:assemblyDate>
                     <xd:paintDate>2022-05-21</xd:paintDate>
                 </xd:miniature>
@@ -237,7 +237,7 @@
                     <xd:role>Elites</xd:role>
                 </xd:unitData>
                 <xd:miniature>
-                    <xd:name>Dread1</xd:name>
+                    <xd:name>Dread_1</xd:name>
                     <xd:assemblyDate>2022-06-19</xd:assemblyDate>
                     <xd:paintDate>2022-06-22</xd:paintDate>
                 </xd:miniature>
